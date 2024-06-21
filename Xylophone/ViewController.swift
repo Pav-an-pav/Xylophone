@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func keyCPressed(_ sender: UIButton) {
-        var char = sender.currentTitle!
+        let char = sender.currentTitle!
         playSound(char)
         sender.alpha = 0.5
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2 ) {
